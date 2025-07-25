@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+#sg-popup {
+	position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+    border-color: #ffffff;
+    margin: 15px auto 0;
+    z-index: 1000000001;
+    max-width: 700px;
+    font-family: 'Poppins', sans-serif;
+}
+.sati-survey-semicircle-up {
+	width: 100%;
+	height: 30%;               
+	border-bottom-left-radius: 100% 150px;
+	border-bottom-right-radius: 100% 150px;
+}
+.sati-survey-semicircle-down1,
+.sati-survey-semicircle-down2 {
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+}
+.sati-survey-semicircle-down1 {	
+	height: 90%;	  
+	border-top-left-radius: 100% 90px;
+	border-top-right-radius: 100% 50px;
+	bottom: 0;
+}
+.sati-survey-semicircle-down2 {
+	height: 93%;
+	bottom: -7%;
+	border-top-left-radius: 100% 70px;
+	border-top-right-radius: 100% 150px;
+}
+.scheme-yellow .sati-survey-semicircle-up {
+	background-color: #fef567;
+}	
+.scheme-yellow .sati-survey-hero-footer .sati-survey-semicircle-down2 {
+    background-color: #ff8cb8;
+	box-shadow: 0 5px 0 0 #ff8cb8;
+}
+.scheme-yellow .sati-survey-hero-footer .sati-survey-semicircle-down1 {
+	background-color: #ffe256;
+	box-shadow: 0 5px 0 0 #ff8cb8;
+}
+.scheme-light-blue .sati-survey-semicircle-up,
+.scheme-light-blue .sati-survey-hero-footer .sati-survey-semicircle-down2 {
+	background-color: #0097b2;
+	box-shadow: 0 5px 0 0 #0097b2;
+}	
+.scheme-light-blue .sati-survey-hero-footer .sati-survey-semicircle-down1 {
+	background-color: #0cc0df;
+	box-shadow: 0 5px 0 0 #0097b2;
+}
+.scheme-blue .sati-survey-semicircle-up,
+.scheme-blue .sati-survey-hero-footer .sati-survey-semicircle-down2 {
+	background-color: #125d82;
+	box-shadow: 0 5px 0 0 #125d82;
+}	
+.scheme-blue .sati-survey-hero-footer .sati-survey-semicircle-down1 {
+	background-color: #197eaf;
+	box-shadow: 0 5px 0 0 #125d82;
+}
+.scheme-pink .sati-survey-semicircle-up,
+.scheme-pink .sati-survey-hero-footer .sati-survey-semicircle-down2   {
+	background-color: #ff5757;
+	box-shadow: 0 5px 0 0 #ff5757;
+}	
+.scheme-pink .sati-survey-hero-footer .sati-survey-semicircle-down1 {
+	background-color: #fd9191;
+	box-shadow: 0 5px 0 0 #ff5757;
+}
+.sati-survey {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+.sati-survey p {
+    padding-bottom: 0;
+    line-height: 1.4;
+    font-size: 12pt;
+    font-family: 'Poppins', sans-serif;
+}
+.sati-survey h1,
+.sati-survey h2,
+.sati-survey h3,
+.sati-survey h4 {
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.sati-survey-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    padding: 0 16px;
+	margin-left: 7%;
+	margin-right: 7%;
+}
+.sati-survey-header > ._close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: none;
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    color: #121212 !important;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 2px 16px;
+    margin: 2px;
+}
+.sati-survey-header > ._close:focus,
+.sati-survey-header > ._close:hover {
+    cursor: pointer;
+    background-color: #ededed;
+    outline: 0;
+}
+.sati-survey-header > ._brand {
+    height: 60px;
+}
+.sati-survey-header > ._brand:nth-child(1) > img {
+    display: block;
+    width: auto;
+    height: 80%;
+    max-width: 100%;
+    object-fit: contain;
+}
+.sati-survey-header > ._brand:nth-child(2) > img {
+    display: block;
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+}
+.sati-survey-body {
+    padding: 0 16px 16px;
+}
+.sati-survey-hero {
+    position: relative;
+    border-radius: 8px;
+    padding: 16px 48px;
+}
+.sati-survey-hero-header {
+    padding-top: 1px;
+    padding-bottom: 2px;
+	position:relative;
+	margin-left: 7%;
+	margin-right: 7%;
+}
+@media screen and (max-width: 500px) {
+	.sati-survey-hero-header > ._title {
+		max-width: 100%;
+		font-size: 18pt;
+		font-weight: 500;
+		text-align: center;
+		margin: 0 auto;
+		line-height: 1.3;
+	}
+	.sati-survey-hero-header > ._title > span {
+		position: absolute;
+		left: 16%;
+		z-index: 2;
+		transform: translateY(-50%);
+		top: 50%;
+	}
+    img.sg-arrow {
+		width: 55%;  
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 601px) {
+	.sati-survey-hero-header > ._title {
+		max-width: 100%;
+		font-size: 19pt;
+		font-weight: 500;
+		text-align: center;
+		margin: 0 auto;
+		line-height: 1.3;
+	}
+	.sati-survey-hero-header > ._title > span {
+		position: absolute;
+		left: 16%;
+		z-index: 2;
+		transform: translateY(-50%);
+		top: 50%;
+	}
+     img.sg-arrow {
+		width: 50%;
+	}
+}
+@media screen and (min-width: 601px) and (max-width: 768px) {
+	.sati-survey-hero-header > ._title {
+		max-width: 100%;
+		font-size: 19pt;
+		font-weight: 500;
+		text-align: center;
+		margin: 0 auto;
+		line-height: 1.3;
+	}
+	.sati-survey-hero-header > ._title > span {
+		position: absolute;
+		left: 16%;
+		z-index: 2;
+		transform: translateY(-50%);
+		top: 50%;
+	}
+     img.sg-arrow {
+		width: 40%;
+    }
+}
+@media screen and (min-width: 769px) {
+	.sati-survey-hero-header > ._title {
+		max-width: 100%;
+		font-size: 19pt;
+		font-weight: 500;
+		text-align: center;
+		margin: 0 auto;
+		line-height: 1.3;
+	}
+	.sati-survey-hero-header > ._title > span {
+		position: absolute;
+		left: 16%;
+		z-index: 2;
+		transform: translateY(-50%);
+		top: 50%;
+	}
+    img.sg-arrow {
+		width: 35%;
+    }
+}
+.sati-survey-hero-body {
+    text-align: center;
+	margin-left: 7%;
+	margin-right: 7%;
+}
+.sati-survey-hero-body > ._description {
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+.sati-survey-hero-body > ._title {
+    margin-top: 0;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+.sati-survey-hero-group {
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    background-color: #fff;
+}
+.sati-survey-button-group {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 8px;
+	text-align: center;
+}
+.sati-survey-hero-group ._link {
+    display: inline-block;
+    width: 50%;
+    border-radius: 15px;
+    padding: 8px;
+    text-decoration: none;
+    vertical-align: middle;
+    text-align: center;
+	font-size: 14pt;
+}
+.sati-survey-hero-group ._link:focus,
+.sati-survey-hero-group ._link:hover {
+    cursor: pointer;
+    background-color: #292929;
+}
+@media screen and (min-width: 1024px) {
+    .sati-survey-hero-group{
+        max-width: 70%;
+        margin: 0 auto;
+    }
+    .sati-survey-btn-col {
+        display: flex;
+    }
+	.sati-survey-button-group {
+		flex: 1;
+		display: flex;
+		align-items: center;
+		flex-wrap: nowrap;
+		border-radius: 25px;
+	}
+	.sati-survey-hero-group ._link {
+		display: inline-block;
+		width: 100%;
+		border-radius: 25px;
+		text-decoration: none;
+		vertical-align: middle;
+		text-align: center;
+	}
+}
+.sati-survey-hero-footer {
+    text-align: center;
+	position: relative;
+}
+.sati-survey-hero-footer > ._title {
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: -0.5px;
+    text-transform:uppercase; 
+    font-size: 12pt;
+}
+.sati-survey-hero-footer > ._description {
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+	margin-left: 15%;
+	margin-right: 15%;
+	font-size: 11pt;	 
+	line-height: 1.4;
+	padding-top: 20px;
+}
+.sati-survey-hero-footer > ._description > a {
+    color: #fff;
+}
+@media screen and (min-height: 570px) and (min-width: 1024px) {
+    #sg-popup {
+		position: fixed;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .sati-survey-header > ._brand {
+		height: 72px;
+    }
+    .sati-survey-hero {
+		padding: 0;
+    }
+    .sati-survey-hero-header {
+		padding-bottom: 2px;
+    }
+    .sati-survey-hero-header > ._title {
+		padding-left: 16px;
+    }
+    .sati-survey-hero-group {
+		background-color: transparent;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .sati-survey-hero-header > ._title {
+		max-width: 640px;
+		padding-left: 16px;
+    }
+}
+.sati-survey-hero-body .titleDescription {
+    font-size: 12pt;
+    font-weight: 600;
+    letter-spacing: -0.1px;
+    font-family: "Poppins";
+}
+.sati-survey-hero-body ._description1,
+.sati-survey-hero-body ._description2 {
+	  margin-bottom: 0px;
+	  margin-top: 12px;
+	  margin-left: 10%;
+	  margin-right: 10%;
+}
+.scheme-blue .sati-survey-hero-body .titleDescription,
+.scheme-blue .sati-survey-hero-body ._description1,
+.scheme-blue .sati-survey-hero-header ._title,
+.scheme-blue .sati-survey-hero-footer ._description { 
+    color: #fff;
+}
+.scheme-blue .sati-survey-hero-group ._link,
+.scheme-blue .sati-survey-hero-group ._link:focus,
+.scheme-blue .sati-survey-hero-group ._link:hover  {
+    background-color: #0c4059;
+} 
+.scheme-light-blue .sati-survey-hero-body .titleDescription,
+.scheme-light-blue .sati-survey-hero-body ._description1,
+.scheme-light-blue .sati-survey-hero-header ._title,
+.scheme-light-blue .sati-survey-hero-footer ._description {
+    color: #fff;
+}  
+.scheme-light-blue .sati-survey-hero-group ._link,
+.scheme-light-blue .sati-survey-hero-group ._link:focus,
+.scheme-light-blue .sati-survey-hero-group ._link:hover {
+    background-color: #125d82;
+}
+.scheme-pink .sati-survey-hero-body .titleDescription,
+.scheme-pink .sati-survey-hero-body ._description1,
+.scheme-pink .sati-survey-hero-header ._title,
+.scheme-pink .sati-survey-hero-footer ._description {
+    color: #fff;
+}
+.scheme-pink .sati-survey-hero-group ._link,
+.scheme-pink .sati-survey-hero-group ._link:focus,
+.scheme-pink .sati-survey-hero-group ._link:hover  {
+    background-color: #ab3939;
+}
+.scheme-yellow .sati-survey-hero-body .titleDescription,
+.scheme-yellow .sati-survey-hero-body ._description1,
+.scheme-yellow .sati-survey-hero-header ._title,
+.scheme-yellow .sati-survey-hero-footer ._description,
+.scheme-yellow .sati-survey-hero-footer > ._description > a {
+    color: #000;
+}
+.scheme-yellow .sati-survey-hero-group ._link,
+.scheme-yellow .sati-survey-hero-group ._link:focus,
+.scheme-yellow .sati-survey-hero-group ._link:hover {
+    background-color: #ff8cb8;
+}
+.sg a._link {
+    font-family: "Poppins", sans-serif;
+}
+.sati-survey h2 {
+    margin: 0.8rem;
+    text-transform: uppercase;
+}
+img.sg-arrow { 
+	display: block;
+	position: relative;
+	left: 5%;
+}
